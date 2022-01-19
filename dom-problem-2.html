@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Problem 2</title>
+</head>
+<body>
+
+    <script> function buttonFunction() {
+            
+            document.getElementById("link").innerHTML = document.getElementById("demo").href;
+        }
+    </script> 
+    
+    <button onclick="buttonFunction()">Click ME!</button>
+    <p><a id="demo" href="https://github.com/fahadg206">Link</a></p>
+    <p id="link">Click the button "Click ME!" above, to display the HREF attribute of the link</p>
+
+</body>
+</html>
+
+
+
