@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Problem 3</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='dom-problem-3.css'>
+</head>
+<body>
+    <script>
+        function tableFunction() {
+            const table = document.getElementById("demo");
+            const addRow = table.insertRow(0);
+            const firstRow = addRow.insertCell(0);
+            const secondRow = addRow.insertCell(1);
+            firstRow.innerHTML = "FIRST CELL";
+            secondRow.innerHTML = "SECOND CELL";
+        
+
+        }
+    </script>
+
+    <button onclick="tableFunction()">Click Here!</button>
+    <table class="table" id="demo">
+        <tr>
+            <td>Hello</td>
+            <td>Hello</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>Hello</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
