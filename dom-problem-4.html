@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Problem 4</title>
+</head>
+<body>
+
+    <button onclick="myFunction()">Click Here!</button>
+    <div id="dropdown">
+        <h3>DropDown</h3>
+        <select name="dropdown-menu">
+            <option value="item-1">Item 1</option>
+            <option value="item-2">Item 2</option>
+            <option value="item-3">Item 3</option>
+        </select>
+    </div>
+
+    <script>
+        function myFunction() {
+            const dropdown = document.getElementById("dropdown")
+            dropdown.alert("")
+
+        }
+    </script>
+</body>
+</html>
